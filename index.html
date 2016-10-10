@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!--<meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">-->
+    <!--Testing for Sourcetree-->
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/eventmate.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+
+
+    <title>Event Mate</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1 align="center">EVENT MATE</h1>
+        </div>
+    </div>
+
+
+    <div class="jumbotron">
+        <h2 align="center">Sriram</h2>
+
+
+        <p align="center">Manage your tasks here</p>
+    </div>
+
+
+    <div align="center" class="container container-task">
+        <button class="btn btn-default" data-target="#addTask" data-toggle=
+        "modal" type="button">Add Tasks</button>
+        <!--  <button id="test" type="button" class="btn btn-default " data-toggle="modal" data-target="#testTask">Test</button>-->
+    </div>
+    <!-- Modal -->
+
+
+    <div class="modal fade" id="addTask" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" type=
+                    "button">&times;</button>
+
+                    <h4 align="center" class="modal-title">Add Tasks</h4>
+                </div>
+
+
+                <div class="modal-body body-modal input-modal">
+                    <form>
+                        <div class="form-group">
+                            <label for="enterTask">Enter task here</label>
+                            <input aria-describedby="emailHelp" class=
+                            "form-control" id="enterTask" placeholder=
+                            "eg. Collect Cake" type="task">
+                            <!--  <small id="enterTask" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="selectMember">Assign Member</label>
+                            <select class="form-control" id="selectMember">
+                                <option>
+                                    Mary
+                                </option>
+
+                                <option>
+                                    Carter
+                                </option>
+
+                                <option>
+                                    William
+                                </option>
+
+                                <option>
+                                    Ajay
+                                </option>
+
+                                <option>
+                                    Lily
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div align="center" class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" id=
+                    "addTaskButton" type="button">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container container-taskbox">
+        <ul class="list-group">
+            <li class = "list-group-item" class="checkbox"><input type="checkbox" value="1">
+              <span>Pre-added task</span>
+              <span class="pull-right glyphicon glyphicon-remove-circle delete"></span>
+            <span class="badge">William</span>
+          </li>
+            <!--class="list-group-item"-->
+        </ul>
+    </div>
+    <!-- jQuery -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="js/eventmatejquery.js">
+    </script> <!-- Bootstrap Core JavaScript -->
+
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+</body>
+</html>
